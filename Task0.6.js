@@ -1,5 +1,5 @@
 function getMaximum() {
-  var maxNumber = 0;
+  let maxNumber = 0;
   for (let value = 0; value < arguments.length; value++) {
     if (arguments[value] > maxNumber) {
       maxNumber = arguments[value];
