@@ -1,12 +1,12 @@
 function getVowels(string) {
-  var word = string.toLowerCase();
-  let vowels = "aeiou";
-  let holdVowels = "Vowels:";
+  let word = string.toLowerCase();
+  const vowels = "aeiou";
+  let holdVowels = [];
 
   for (let i in word) {
-    if (vowels.includes(word[i]) && holdVowels.includes([word[i]]) == false) {//ignores duplicates
-      holdVowels += word[i];
+    if (vowels.includes(word[i]) && holdVowels.indexOf(word[i])<0) {//ignores duplicates
+      holdVowels.push(word[i])
     }
   }
-  console.log(holdVowels);
+  console.log(holdVowels.toString());
 }
