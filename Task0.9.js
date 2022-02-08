@@ -1,5 +1,5 @@
 function getVowels(string) {
-  let word = string.toLowerCase();
+  const word = string.toLowerCase();
   const vowels = "aeiou";
   let holdVowels = [];
 
