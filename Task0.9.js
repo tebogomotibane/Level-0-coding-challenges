@@ -8,5 +8,5 @@ function getVowels(string) {
       holdVowels.push(word[i])
     }
   }
-  console.log(holdVowels.toString());
+  console.log("Vowels:",holdVowels.toString());
 }
